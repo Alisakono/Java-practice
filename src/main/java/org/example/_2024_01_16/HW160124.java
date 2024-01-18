@@ -22,7 +22,6 @@ public class HW160124 {
         System.out.println("perimeter = " + perimeter);
 
 //        Площадь сферы
-
         double radius = 5;
         double square1 = (4 * Math.PI * radius);
         System.out.println("square1 = " + square1);
