@@ -3,34 +3,32 @@ package org.example._2024_01_18;
 import java.util.Scanner;
 
 public class HW_Factorial {
-    public static int usFor(int x) {
-        int fact1 = 1;
-        for (int i = 1; i <= x; i++) {
-            fact1 = fact1 * i;
+    public static int usFor(int num) {
+        int fact = 1;
+        for (int i = 1; i <= num; i++) {
+            fact = fact * i;
         }
-        return fact1;
+        return fact;
     }
 
-    public static int usDo(int y) {
-        int fact2 = 1;
+    public static int usDo(int num) {
+        int fact = 1;
         int i = 1;
         do {
-            fact2 = fact2 * i;
+            fact = fact * i;
             i++;
-        } while (i <= y);
-        {
-            return fact2;
+        } while (i <= num);
+            return fact;
         }
-    }
 
-    public static int usWhile(int z) {
-        int fact3 = 1;
+    public static int usWhile(int num) {
+        int fact = 1;
         int i = 1;
-        while (i <= z) {
-            fact3 = fact3 * i;
+        while (i <= num) {
+            fact = fact * i;
             i++;
         }
-        return fact3;
+        return fact;
     }
 
     public static void main(String[] args) {
