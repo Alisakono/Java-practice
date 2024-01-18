@@ -7,7 +7,7 @@ public class HW_170124_Sphere {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите длину радиуса: ");
         double radius = scanner.nextDouble();
-        double square1 = (4 * Math.PI * radius);
+        double square1 = (4 * Math.PI * radius*radius);
         System.out.println("square1 = " + Math.floor(square1));
     }
 }
