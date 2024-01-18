@@ -23,7 +23,7 @@ public class HW160124 {
 
 //        Площадь сферы
         double radius = 5;
-        double square1 = (4 * Math.PI * radius);
+        double square1 = (4 * Math.PI * radius*radius);
         System.out.println("square1 = " + square1);
     }
 }
