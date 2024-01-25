@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Task6 {
     public static void main(String[] args) {
-        int[] arr = {12, 4, 5, 6, 9, -5, 8, -7};
+        int[] arr = {10, 2, 100, 120, 2};
         System.out.println("Два наименьших элемента: " + Arrays.toString(minNumb(arr)));
         System.out.println("Сумма модулей элементов массива: " + sumMod(arr));
         System.out.println("Номер минимального по модулю элемента массива: " + minMod(arr));
@@ -17,10 +17,9 @@ public class Task6 {
         int minNum2 = arr[0];
         for (int j : arr) {
             if (j < minNum1) {
-                minNum2 = minNum1;
                 minNum1 = j;
             }
-            else if (j <= minNum2) {
+            else if (j <= minNum2 || minNum1 == minNum2) {
                 minNum2 = j;
             }
         }
