@@ -1,5 +1,6 @@
 package org.example._2024_01_25;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class HW_25_01_24 {
@@ -24,53 +25,59 @@ public class HW_25_01_24 {
             int n = scanner.nextInt();
             System.out.println("Числа Фибоначчи: ");
 
-            fibonacciF(n);
-            System.out.println(" ");
-            fibonacciW(n);
-            System.out.println(" ");
-            fibonacciD(n);
+            System.out.println(fibonacciF(n));
+
+            System.out.println(fibonacciW(n));
+
+            System.out.println(fibonacciD(n));
 
         }
     }
-    public static void fibonacciF(int n) {
+
+    public static int fibonacciF(int n) {
         int num1 = 0;
         int num2 = 1;
         for (int i = 0; i < n; i++) {
             System.out.print(num1 + " ");
-
             int num3 = num1 + num2;
             num1 = num2;
             num2 = num3;
+
         }
 
+        return num1;
     }
-    public static void fibonacciW(int n) {
-        int num1 = 0;
-        int num2 = 1;
-        int j = 0;
-        while (j < n) {
-            System.out.print(num1 + " ");
+        public static int fibonacciW(int n){
+            int num1 = 0;
+            int num2 = 1;
+                int j = 0;
+                while (j < n) {
+                    System.out.print(num1 + " ");
+                    int num3 = num1 + num2;
+                    num1 = num2;
+                    num2 = num3;
+                    j++;
 
-            int num3 = num1 + num2;
-            num1 = num2;
-            num2 = num3;
-            j++;
+                }
+                return num1;
+            }
+            public static int fibonacciD ( int n){
+                int num1 = 0;
+                int num2 = 1;
+                int k = 0;
+                do {
+                    System.out.print(num1 + " ");
+
+                    int num3 = num1 + num2;
+                    num1 = num2;
+                    num2 = num3;
+                    k++;
+                } while (k < n);
+                return num1;
+            }
         }
-    }
-    public static void fibonacciD(int n) {
-        int num1 = 0;
-        int num2 = 1;
-        int k = 0;
-        do {
-            System.out.print(num1 + " ");
 
-            int num3 = num1 + num2;
-            num1 = num2;
-            num2 = num3;
-            k++;
-        } while (k < n);
-    }
-}
+
 
 
 
